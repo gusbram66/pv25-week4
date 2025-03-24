@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>POS Application</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QVBoxLayout" name="verticalLayoutWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>460</width>
+      <height>350</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="labelProduct">
+       <property name="text">
+        <string>Product</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="productDropdown"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelQuantity">
+       <property name="text">
+        <string>Quantity</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="quantityInput">
+       <property name="minimum">
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelDiscount">
+       <property name="text">
+        <string>Discount</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="discountDropdown"/>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="buttonLayout">
+       <item>
+        <widget class="QPushButton" name="addToCartButton">
+         <property name="text">
+          <string>Add to Cart</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="clearButton">
+         <property name="text">
+          <string>Clear</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QListWidget" name="cartList"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="totalLabel">
+       <property name="text">
+        <string>Total: Rp. 0</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QVBoxLayout</class>
+   <extends>QWidget</extends>
+   <header>qvboxlayout.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
