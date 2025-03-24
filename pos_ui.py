@@ -16,7 +16,7 @@ class POSApp(QMainWindow):
         }
 
         # Isi dropdown produk
-        self.productDropdown.addItem("")  # Awalnya kosong
+        self.productDropdown.addItem("")  
         self.productDropdown.addItems(self.products.keys())
 
         # Event Handling
@@ -25,7 +25,7 @@ class POSApp(QMainWindow):
 
         # Inisialisasi cart
         self.cart = []
-        self.clear_form()  # Set awal kosong
+        self.clear_form()  
 
     def add_to_cart(self):
         product = self.productDropdown.currentText()
